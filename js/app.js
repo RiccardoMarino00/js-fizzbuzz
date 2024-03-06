@@ -26,6 +26,9 @@ for (let i = 0; i < 100; i++){
                     numeriElement.innerHTML += `<li>${num}</li>`
                     console.log(num)
 
+            }   else {
+                     numeriElement.innerHTML += `<li>${num}</li>`
+                     console.log(num)
             }
             
 }
