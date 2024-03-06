@@ -10,9 +10,9 @@ for (let i = 0; i < 100; i++){
 
     // console.log(num)
 
-    // Per i multipli di 3 stampare "Fizz" al posto del numero
-    if (multiplo3 === 0){
-        num = "Fizz"
+    // Per i numeri che sono sia multipli di 3 che di 5 stampare "FizzBuzz" al posto del numero
+    if (multiplo3 === 0 && multiplo5 === 0){
+        num = "FizzBuzz"
         numeriElement.innerHTML += `<li> ${num} </li>`
         console.log(num)
       // Per i multipli di 5 stampare "Buzz" al posto del numero
@@ -20,9 +20,10 @@ for (let i = 0; i < 100; i++){
              num = "Buzz"
              numeriElement.innerHTML += `<li>${num}</li>`
              console.log(num)
-              // Per i numeri che sono sia multipli di 3 che di 5 stampare "FizzBuzz" al posto del numero
-        }   else if (multiplo3 === 0 && multiplo5 === 0){
-                    num = "FizzBuzz"
+            // Per i multipli di 3 stampare "Fizz" al posto del numero
+        }   else if (multiplo3 === 0){
+                    num = "Fizz"
+                    numeriElement.innerHTML += `<li>${num}</li>`
                     console.log(num)
 
             }
