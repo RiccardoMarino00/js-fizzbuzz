@@ -1,7 +1,7 @@
 // Stampare in console numeri da 1 a 100
 let n = 100
 const numeriElement = document.getElementById("numeri")
-const numeri5Element = document.getElementById("numeri")
+// const numeri5Element = document.getElementById("numeri")
 
 for (let i = 0; i < 100; i++){
     let num = i + 1
@@ -16,13 +16,17 @@ for (let i = 0; i < 100; i++){
         numeriElement.innerHTML += `<li> ${num} </li>`
         console.log(num)
       // Per i multipli di 5 stampare "Buzz" al posto del numero
-    } else if (multiplo5 === 0){
-               num = "Buzz"
-               numeri5Element.innerHTML += `<li>${num}</li>`
-               console.log(num)
+    }   else if (multiplo5 === 0){
+             num = "Buzz"
+             numeriElement.innerHTML += `<li>${num}</li>`
+             console.log(num)
+              // Per i numeri che sono sia multipli di 3 che di 5 stampare "FizzBuzz" al posto del numero
+        }   else if (multiplo3 === 0 && multiplo5 === 0){
+                    num = "FizzBuzz"
+                    console.log(num)
 
-    }
+            }
             
 }
-// Per i numeri che sono sia multipli di 3 che di 5 stampare "FizzBuzz" al posto del numero
+
 
